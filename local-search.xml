@@ -8,7 +8,7 @@
     <link href="/2023/06/24/test2/"/>
     <url>/2023/06/24/test2/</url>
     
-    <content type="html"><![CDATA[<p><img src="/imgs/$%7Bfiilename%7D/image-20230624225934675.png" alt="image-20230624225934675"></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/../imgs/test2/image-20230624231101053.png" alt="image-20230624231101053"></p>]]></content>
     
     
     
