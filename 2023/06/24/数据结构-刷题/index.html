@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="Toert😊">
 <meta property="og:description" content="参考武汉大学数据结构周测刷题😒">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110165354598.png#pic_center">
+<meta property="og:image" content="http://example.com/images/20201110165354598.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20201120113503525.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NzAwNDU0MA==,size_16,color_FFFFFF,t_70#pic_center">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/a42ab51fec95446eb61457f0f0ad7f69.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA54yq6ISa546L,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/243b9b0886544c17962868439f3faae3.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA54yq6ISa546L,size_20,color_FFFFFF,t_70,g_se,x_16">
@@ -34,12 +34,12 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/d8e8541f0d154c769fcc92abb1975033.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA54yq6ISa546L,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/7b54b135a228437da74f2d168391745c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA54yq6ISa546L,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="article:published_time" content="2023-06-24T11:06:33.000Z">
-<meta property="article:modified_time" content="2023-06-24T13:16:08.134Z">
+<meta property="article:modified_time" content="2023-06-24T14:07:09.624Z">
 <meta property="article:author" content="Toert">
 <meta property="article:tag" content="数据结构">
 <meta property="article:tag" content="考试复习">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20201110165354598.png#pic_center">
+<meta name="twitter:image" content="http://example.com/images/20201110165354598.png">
   
   
   
@@ -364,7 +364,7 @@
 <h2 id="2、单选-2分-带头节点的双链表L为空表时应满足（-）。"><a href="#2、单选-2分-带头节点的双链表L为空表时应满足（-）。" class="headerlink" title="2、单选(2分)带头节点的双链表L为空表时应满足（ ）。"></a>2、单选(2分)带头节点的双链表L为空表时应满足（ ）。</h2><p>A.L &#x3D;&#x3D; NULL<br>B.L-&gt;prior &#x3D;&#x3D; L-&gt;next<br>C.L-&gt;prior &#x3D;&#x3D; NULL<br>D.L-&gt;nex t &#x3D;&#x3D; NULL<br><strong>正确答案：D</strong></p>
 <p><strong>课本考据：除了插入和删除结点，双链表其他运算的算法与单链表中相应的算法相同。</strong></p>
 <h2 id="3、单选-2分-在长度为n（n≥1）的双链表中插入一个节点（非尾节点）要修改（-）个指针域。"><a href="#3、单选-2分-在长度为n（n≥1）的双链表中插入一个节点（非尾节点）要修改（-）个指针域。" class="headerlink" title="3、单选(2分)在长度为n（n≥1）的双链表中插入一个节点（非尾节点）要修改（ ）个指针域。"></a>3、单选(2分)在长度为n（n≥1）的双链表中插入一个节点（非尾节点）要修改（ ）个指针域。</h2><p>A.1<br>B.2<br>C.3<br>D.4<br><strong>正确答案：D</strong><br>解析： D、需要修改插入节点的prior、next域，前驱节点的next域和后继节点的prior域。</p>
-<p><strong>课本考据：原理参考第二题，如图<img src="https://img-blog.csdnimg.cn/20201110165354598.png#pic_center" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"></strong><br><strong>操作语句如下：</strong></p>
+<p><strong>课本考据：原理参考第二题，如图<img src="/images/20201110165354598.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述"></strong><br><strong>操作语句如下：</strong></p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs c">s-&gt;next=p-&gt;next;<br>p-&gt;next-&gt;prior=s;<br>s-&gt;prior=p;<br>p-&gt;next=s;<br><span class="hljs-number">1234</span><br></code></pre></td></tr></table></figure>
 
 <h2 id="4、单选-2分-对于长度为n（n≥1）的双链表L，在p所指节点之前插入一个新节点的算法的时间复杂度为（-）。"><a href="#4、单选-2分-对于长度为n（n≥1）的双链表L，在p所指节点之前插入一个新节点的算法的时间复杂度为（-）。" class="headerlink" title="4、单选(2分)对于长度为n（n≥1）的双链表L，在p所指节点之前插入一个新节点的算法的时间复杂度为（ ）。"></a>4、单选(2分)对于长度为n（n≥1）的双链表L，在p所指节点之前插入一个新节点的算法的时间复杂度为（ ）。</h2><p>A.O(1)<br>B.O(n)<br>C.O(n2)<br>D.O(nlog2n)<br><strong>正确答案：A</strong><br>解析： A、设新节点指针为q，操作是：p-&gt;prior-&gt;next&#x3D;p; q-&gt;prior&#x3D;p-&gt;prior; p-&gt;prior&#x3D;q; q-&gt;next&#x3D;p;</p>
