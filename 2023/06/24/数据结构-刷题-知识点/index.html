@@ -30,8 +30,12 @@
 <meta property="og:image" content="http://example.com/imgs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%88%B7%E9%A2%98-%E7%9F%A5%E8%AF%86%E7%82%B9/d01d208e645a8c52bd6d361abd330f19.jpeg">
 <meta property="og:image" content="http://example.com/imgs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%88%B7%E9%A2%98-%E7%9F%A5%E8%AF%86%E7%82%B9/image-20230626185308725.png">
 <meta property="og:image" content="http://example.com/imgs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%88%B7%E9%A2%98-%E7%9F%A5%E8%AF%86%E7%82%B9/image-20230626191930112.png">
+<meta property="og:image" content="http://example.com/imgs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%88%B7%E9%A2%98-%E7%9F%A5%E8%AF%86%E7%82%B9/image-20230627024108720.png">
+<meta property="og:image" content="http://example.com/imgs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%88%B7%E9%A2%98-%E7%9F%A5%E8%AF%86%E7%82%B9/image-20230627031937171.png">
+<meta property="og:image" content="http://example.com/imgs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%88%B7%E9%A2%98-%E7%9F%A5%E8%AF%86%E7%82%B9/image-20230627032525022.png">
+<meta property="og:image" content="http://example.com/imgs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%88%B7%E9%A2%98-%E7%9F%A5%E8%AF%86%E7%82%B9/image-20230627032742272.png">
 <meta property="article:published_time" content="2023-06-24T11:06:35.000Z">
-<meta property="article:modified_time" content="2023-06-26T14:46:14.526Z">
+<meta property="article:modified_time" content="2023-06-26T19:28:31.411Z">
 <meta property="article:author" content="Toert">
 <meta property="article:tag" content="数据结构">
 <meta property="article:tag" content="考试复习">
@@ -246,7 +250,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.7k 字
+          4.9k 字
         
       </span>
     
@@ -257,7 +261,7 @@
         
         
         
-          31 分钟
+          41 分钟
         
       </span>
     
@@ -503,7 +507,83 @@
 <h4 id="3-n阶三对角矩阵按行优先"><a href="#3-n阶三对角矩阵按行优先" class="headerlink" title="3.n阶三对角矩阵按行优先"></a>3.n阶三对角矩阵按行优先</h4><blockquote>
 <p>放入数组求数组元素个数：3n-2</p>
 </blockquote>
-<h4 id="4-稀疏矩阵压缩存储"><a href="#4-稀疏矩阵压缩存储" class="headerlink" title="4.稀疏矩阵压缩存储"></a>4.稀疏矩阵压缩存储</h4>
+<h4 id="4-稀疏矩阵压缩存储"><a href="#4-稀疏矩阵压缩存储" class="headerlink" title="4.稀疏矩阵压缩存储"></a>4.稀疏矩阵压缩存储</h4><h1 id="第五章-树和二叉树"><a href="#第五章-树和二叉树" class="headerlink" title="第五章-树和二叉树"></a>第五章-树和二叉树</h1><h2 id="一、树（概念性，便于理解）"><a href="#一、树（概念性，便于理解）" class="headerlink" title="一、树（概念性，便于理解）"></a>一、树（概念性，便于理解）</h2><h3 id="1-概念"><a href="#1-概念" class="headerlink" title="1.概念"></a>1.概念</h3><blockquote>
+<p>树形结构是一种非线性结构，与线性结构的区别在于树形结构一对多的关系，线性结构是一对一的关系，</p>
+<p>树形结构节点之间具有分支，具有层次结构</p>
+<p>树结生活中的例子：家谱、行政组织、编程语句块缩进、数据库信息组织</p>
+<p><strong>树的定义</strong>：树是n(n&gt;0)个节点的有限集合T</p>
+<ul>
+<li>当n&gt;0时，树有且只有一个根节点</li>
+<li>其余节点为m(m&gt;&#x3D;0)个互不相交的有限集合，每个m节点又可以组成一个树，该m节点称之为根节点的子树</li>
+</ul>
+<p><strong>空树</strong>：n&#x3D;0,0个节点的树</p>
+</blockquote>
+<h3 id="2-特点"><a href="#2-特点" class="headerlink" title="2.特点"></a>2.特点</h3><blockquote>
+<p>根节点：有且只有一个节点没有直接前驱</p>
+<p>叶子节点：有一个或多个节点没有直接后继</p>
+<p>除根节点外，其余节点有且只有一个直接前驱</p>
+<p>除叶子节点外，其余节点有一个或多个直接后继</p>
+</blockquote>
+<h3 id="3-术语"><a href="#3-术语" class="headerlink" title="3.术语"></a>3.术语</h3><blockquote>
+<p>节点：树中包含一个数据元素及若干指向子树的分支</p>
+<p>节点的度：一个节点所具有子树的个数</p>
+<p>树的度：树的度等于树种节点最大的度</p>
+<p>叶子：度为0的节点</p>
+<p>非终端节点：除根节点之外度不为0的节点</p>
+<p>双亲、孩子节点：树中某个节点所组成子树的根称之为该节点的孩子节点，该节点为孩子节点的双亲节点</p>
+<p>兄弟节点：具有同一个双亲节点的多个节点称之为兄弟节点</p>
+<p>祖先：从该节点往根节经过的分支节点称之为该节点的祖先</p>
+<p>子孙：以某一结点为根的子树中的任意节点都称之为该节点的子孙</p>
+<p>树的高度：树中节点的最大层数称之为树的高度</p>
+<p>有序树：子节点之间存在某种顺序关系，谁在左谁在右</p>
+<p>无序树：子节点之间不存在顺序关系的树</p>
+<p>森林：m棵互补相交的树的集合</p>
+</blockquote>
+<h2 id="二、二叉树🌟"><a href="#二、二叉树🌟" class="headerlink" title="二、二叉树🌟"></a>二、二叉树🌟</h2><blockquote>
+<p>定义：由n&gt;&#x3D;o个节点所组成的有限序集合，当n&gt;0时由一个根节点1以及两棵互不相交的左子树和右子树的子二叉树组成</p>
+</blockquote>
+<h3 id="1-特征"><a href="#1-特征" class="headerlink" title="1.特征"></a>1.特征</h3><blockquote>
+<p>二叉树中每个节点做多只能拥有两棵子书</p>
+<p>二叉树的度最大为2，即树的度最多为2</p>
+<p>每个孩子节点都有左右之分</p>
+</blockquote>
+<h3 id="2-二叉树五种基本状态"><a href="#2-二叉树五种基本状态" class="headerlink" title="2.二叉树五种基本状态"></a>2.二叉树五种基本状态</h3><p><img src="/../imgs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%88%B7%E9%A2%98-%E7%9F%A5%E8%AF%86%E7%82%B9/image-20230627024108720.png" srcset="/img/loading.gif" lazyload alt="image-20230627024108720"></p>
+<h3 id="3-性质"><a href="#3-性质" class="headerlink" title="3.性质"></a>3.性质</h3><blockquote>
+<ul>
+<li>在二叉树中第i层中(i&gt;&#x3D;1),最多有2^(i-1)个节点</li>
+<li>根据上述的性质，深度为k的二叉树最多有(2^k)-1个节点</li>
+<li>对于任意二叉树，设叶子节点为n0,度为2节点的个数为n2,则有n0&#x3D;n2+1</li>
+</ul>
+</blockquote>
+<h2 id="三、特殊二叉树"><a href="#三、特殊二叉树" class="headerlink" title="三、特殊二叉树"></a>三、特殊二叉树</h2><h3 id="1-满二叉树"><a href="#1-满二叉树" class="headerlink" title="1.满二叉树"></a>1.满二叉树</h3><blockquote>
+<p>深度为k且有(2^k)-1个节点的二叉树称之为满二叉树</p>
+</blockquote>
+<h4 id="特征：每一层上的节点都达到最大值，节点树为-2-k-1-叶子节点都在最下面一层"><a href="#特征：每一层上的节点都达到最大值，节点树为-2-k-1-叶子节点都在最下面一层" class="headerlink" title="特征：每一层上的节点都达到最大值，节点树为(2^k)-1,叶子节点都在最下面一层"></a>特征：每一层上的节点都达到最大值，节点树为(2^k)-1,叶子节点都在最下面一层</h4><h3 id="2-完全二叉树"><a href="#2-完全二叉树" class="headerlink" title="2.完全二叉树"></a>2.完全二叉树</h3><blockquote>
+<p>对一颗具有n个结点的二叉树按层序编号，如果编号为i的结点与同样深度的满二叉树中编号为i的结点在二叉树中的位置相同，则这棵二叉树称为完全二叉树</p>
+</blockquote>
+<h4 id="特征："><a href="#特征：" class="headerlink" title="特征："></a>特征：</h4><ul>
+<li>叶子结点只能出现在最下两层。</li>
+<li>最下层的叶子一定集中在左部连续位置。</li>
+<li>倒数第二层，若有叶子结点，一定都在右部连续位置。</li>
+<li>如果结点度为1，则该结点只有左孩子。</li>
+<li>同样结点数为2的二叉树，完全二叉树的深度最小。</li>
+</ul>
+<h2 id="四、二叉树遍历"><a href="#四、二叉树遍历" class="headerlink" title="四、二叉树遍历"></a>四、二叉树遍历</h2><h3 id="1-先序遍历"><a href="#1-先序遍历" class="headerlink" title="1.先序遍历"></a>1.先序遍历</h3><blockquote>
+<p>规则：先从根节点开始，先遍历左子树，再遍历右子树</p>
+</blockquote>
+<p><img src="/../imgs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%88%B7%E9%A2%98-%E7%9F%A5%E8%AF%86%E7%82%B9/image-20230627031937171.png" srcset="/img/loading.gif" lazyload alt="image-20230627031937171"></p>
+<p>顺序：1、2、3、4、5、6</p>
+<h3 id="2-中序遍历"><a href="#2-中序遍历" class="headerlink" title="2.中序遍历"></a>2.中序遍历</h3><blockquote>
+<p>先遍历左子树、访问根节点、遍历右子树</p>
+<p><img src="/../imgs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%88%B7%E9%A2%98-%E7%9F%A5%E8%AF%86%E7%82%B9/image-20230627032525022.png" srcset="/img/loading.gif" lazyload alt="image-20230627032525022"></p>
+</blockquote>
+<p>顺序：4、2、5、1、6、3、7</p>
+<h3 id="3-后序遍历"><a href="#3-后序遍历" class="headerlink" title="3.后序遍历"></a>3.后序遍历</h3><blockquote>
+<p>先遍历左子树，后遍历右子树，最后根</p>
+<p><img src="/../imgs/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%88%B7%E9%A2%98-%E7%9F%A5%E8%AF%86%E7%82%B9/image-20230627032742272.png" srcset="/img/loading.gif" lazyload alt="image-20230627032742272"></p>
+</blockquote>
+<p>顺序：4526731</p>
+
                 
               </div>
             
